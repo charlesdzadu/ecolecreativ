@@ -2,7 +2,7 @@ body, html {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	font-family: Arial, sans-serif;
+	font-family: 'Montserrat', sans-serif;
   }
 
   /* body {
@@ -87,6 +87,12 @@ body, html {
 	font-weight: bold;
 	margin: 0 !important;
 	text-transform: uppercase;
+  }
+
+  section span {
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-top: 20px;
   }
 
 
