@@ -6,11 +6,7 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
-
 header {
-  /* position: absolute; */
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background-image: url('./images/2-min.webp');
@@ -34,21 +30,36 @@ header .buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 800px;
+  gap: 5rem;
 }
 
 header .buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 10px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
-  background-color: transparent;
-  border: none;
+  border: 2px solid #fff;
   color: #ffffff;
   text-decoration: none;
+  width:380px;
+  height: 40px;
 }
-
+.transparent {
+  background-color: transparent;
+}
+.colored {
+  gap: 1rem;
+  background: linear-gradient(#ea6108, #ed0d74);
+  border: none !important;
+}
+.colored img {
+  width: 40px;
+  height: 40px;
+}
 section {
   height: 900px;
   width: 100%;
@@ -75,7 +86,7 @@ section h2 {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  padding-top:60px;
+  padding-top: 60px;
 }
 
 section p {
@@ -91,9 +102,10 @@ section span {
   margin-top: 20px;
 }
 
-@media (max-width: 840px) {
+
+@media (max-width: 890px) {
   header {
-    height: 60%;
+    height: 75%;
   }
   header img.logo {
     width: 200px;
@@ -102,40 +114,46 @@ section span {
   }
 
   header .buttons {
-    min-width:auto;
     flex-direction: column;
+    gap: 1.5rem;
     align-items: center;
     justify-content: center;
+	margin-bottom: 40px;
   }
   header .buttons a {
     font-size: 16px;
+    padding: 10px;
+    height: 30px;
+	width:100%;
+  }
+  .colored img {
+    width: 30px;
+    height: 30px;
   }
   section {
-	width: 100%;
-	height:auto;
-	padding-bottom:20px;
-  }
-  section h2{
-	padding-top:20px;
-  }
-  section img {
-	width: 200px;
-	height: auto;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
   }
   section h2 {
-	font-size: 20px;
+    padding-top: 20px;
+  }
+  section img {
+    width: 200px;
+    height: auto;
+  }
+  section h2 {
+    font-size: 20px;
   }
   .logo-creative {
-	width: 200px;
-	height: auto;
+    width: 200px;
+    height: auto;
   }
   section p {
-	font-size: 16px;
+    font-size: 16px;
   }
   section span {
-	font-size: 14px;
-	text-align:center;
+    font-size: 14px;
+    text-align: center;
   }
-
-
 }
