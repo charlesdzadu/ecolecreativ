@@ -23,7 +23,7 @@ header img.logo {
   height: auto;
   margin-top: 60px;
 }
-header .intro{
+header .intro {
   display:flex;
   flex-direction:column;
   gap:2rem;
@@ -46,7 +46,7 @@ header .intro p {
 }
 header .intro .buttons {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
